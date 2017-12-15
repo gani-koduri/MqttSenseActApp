@@ -7,9 +7,9 @@
 //
 
 #import "AppDelegate.h"
+#include <PubNub/PubNub.h>
 
-@interface AppDelegate ()
-
+@interface AppDelegate () <PNObjectEventListener>
 @end
 
 @implementation AppDelegate

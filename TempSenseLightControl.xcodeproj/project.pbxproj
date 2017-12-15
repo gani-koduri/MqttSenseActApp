@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E7085F69196B1A0B08281106 /* Pods_TempSenseLightControl.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6C1442A2954D2CC5F355BB8F /* Pods_TempSenseLightControl.framework */; };
 		FAF23F0B1FE34C860057A415 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = FAF23F0A1FE34C860057A415 /* AppDelegate.m */; };
 		FAF23F0E1FE34C860057A415 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FAF23F0D1FE34C860057A415 /* ViewController.m */; };
 		FAF23F111FE34C860057A415 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FAF23F0F1FE34C860057A415 /* Main.storyboard */; };
@@ -35,6 +36,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		6C1442A2954D2CC5F355BB8F /* Pods_TempSenseLightControl.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TempSenseLightControl.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C934F82BFDADEF2EE5BB218F /* Pods-TempSenseLightControl.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TempSenseLightControl.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TempSenseLightControl/Pods-TempSenseLightControl.debug.xcconfig"; sourceTree = "<group>"; };
+		EA1F46097E951BBA7579CB28 /* Pods-TempSenseLightControl.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TempSenseLightControl.release.xcconfig"; path = "Pods/Target Support Files/Pods-TempSenseLightControl/Pods-TempSenseLightControl.release.xcconfig"; sourceTree = "<group>"; };
 		FAF23F061FE34C860057A415 /* TempSenseLightControl.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TempSenseLightControl.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FAF23F091FE34C860057A415 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		FAF23F0A1FE34C860057A415 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -58,6 +62,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E7085F69196B1A0B08281106 /* Pods_TempSenseLightControl.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -78,6 +83,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		9C661E4C7E38F4B8CC84BE88 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				C934F82BFDADEF2EE5BB218F /* Pods-TempSenseLightControl.debug.xcconfig */,
+				EA1F46097E951BBA7579CB28 /* Pods-TempSenseLightControl.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		A237D118EC3BE5FBB6D9A786 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				6C1442A2954D2CC5F355BB8F /* Pods_TempSenseLightControl.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		FAF23EFD1FE34C860057A415 = {
 			isa = PBXGroup;
 			children = (
@@ -85,6 +107,8 @@
 				FAF23F211FE34C880057A415 /* TempSenseLightControlTests */,
 				FAF23F2C1FE34C880057A415 /* TempSenseLightControlUITests */,
 				FAF23F071FE34C860057A415 /* Products */,
+				9C661E4C7E38F4B8CC84BE88 /* Pods */,
+				A237D118EC3BE5FBB6D9A786 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -139,9 +163,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = FAF23F321FE34C880057A415 /* Build configuration list for PBXNativeTarget "TempSenseLightControl" */;
 			buildPhases = (
+				93AA1A2FD86497CCA0BCD0EE /* [CP] Check Pods Manifest.lock */,
 				FAF23F021FE34C860057A415 /* Sources */,
 				FAF23F031FE34C860057A415 /* Frameworks */,
 				FAF23F041FE34C860057A415 /* Resources */,
+				C258DED0A7805F5E4607603D /* [CP] Embed Pods Frameworks */,
+				BD00A45F85AB2552B8BB64A4 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -259,6 +286,60 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		93AA1A2FD86497CCA0BCD0EE /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-TempSenseLightControl-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BD00A45F85AB2552B8BB64A4 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TempSenseLightControl/Pods-TempSenseLightControl-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C258DED0A7805F5E4607603D /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-TempSenseLightControl/Pods-TempSenseLightControl-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/PubNub/PubNub.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/PubNub.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TempSenseLightControl/Pods-TempSenseLightControl-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		FAF23F021FE34C860057A415 /* Sources */ = {
@@ -428,6 +509,7 @@
 		};
 		FAF23F331FE34C880057A415 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C934F82BFDADEF2EE5BB218F /* Pods-TempSenseLightControl.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -442,6 +524,7 @@
 		};
 		FAF23F341FE34C880057A415 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = EA1F46097E951BBA7579CB28 /* Pods-TempSenseLightControl.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
