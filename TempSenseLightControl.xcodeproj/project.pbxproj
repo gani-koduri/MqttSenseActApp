@@ -12,7 +12,6 @@
 		FAF23F0E1FE34C860057A415 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FAF23F0D1FE34C860057A415 /* ViewController.m */; };
 		FAF23F111FE34C860057A415 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FAF23F0F1FE34C860057A415 /* Main.storyboard */; };
 		FAF23F131FE34C860057A415 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FAF23F121FE34C860057A415 /* Assets.xcassets */; };
-		FAF23F161FE34C870057A415 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FAF23F141FE34C870057A415 /* LaunchScreen.storyboard */; };
 		FAF23F191FE34C870057A415 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = FAF23F181FE34C870057A415 /* main.m */; };
 		FAF23F231FE34C880057A415 /* TempSenseLightControlTests.m in Sources */ = {isa = PBXBuildFile; fileRef = FAF23F221FE34C880057A415 /* TempSenseLightControlTests.m */; };
 		FAF23F2E1FE34C880057A415 /* TempSenseLightControlUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = FAF23F2D1FE34C880057A415 /* TempSenseLightControlUITests.m */; };
@@ -46,7 +45,6 @@
 		FAF23F0D1FE34C860057A415 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		FAF23F101FE34C860057A415 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		FAF23F121FE34C860057A415 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		FAF23F151FE34C870057A415 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		FAF23F171FE34C870057A415 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FAF23F181FE34C870057A415 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		FAF23F1E1FE34C880057A415 /* TempSenseLightControlTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TempSenseLightControlTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -131,7 +129,6 @@
 				FAF23F0D1FE34C860057A415 /* ViewController.m */,
 				FAF23F0F1FE34C860057A415 /* Main.storyboard */,
 				FAF23F121FE34C860057A415 /* Assets.xcassets */,
-				FAF23F141FE34C870057A415 /* LaunchScreen.storyboard */,
 				FAF23F171FE34C870057A415 /* Info.plist */,
 				FAF23F181FE34C870057A415 /* main.m */,
 			);
@@ -265,7 +262,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FAF23F161FE34C870057A415 /* LaunchScreen.storyboard in Resources */,
 				FAF23F131FE34C860057A415 /* Assets.xcassets in Resources */,
 				FAF23F111FE34C860057A415 /* Main.storyboard in Resources */,
 			);
@@ -392,14 +388,6 @@
 			name = Main.storyboard;
 			sourceTree = "<group>";
 		};
-		FAF23F141FE34C870057A415 /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				FAF23F151FE34C870057A415 /* Base */,
-			);
-			name = LaunchScreen.storyboard;
-			sourceTree = "<group>";
-		};
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
@@ -515,6 +503,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = FHQANP6PT7;
 				INFOPLIST_FILE = TempSenseLightControl/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = gani.TempSenseLightControl;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -530,6 +519,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = FHQANP6PT7;
 				INFOPLIST_FILE = TempSenseLightControl/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = gani.TempSenseLightControl;
 				PRODUCT_NAME = "$(TARGET_NAME)";
